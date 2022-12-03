@@ -1,0 +1,35 @@
+.body {
+  background-color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: aliceblue;
+  border: 5px solid #000;
+  border-radius: 30px;
+}
+
+.box {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid;
+}
+
+.heading {
+  font-size: 16px;
+  margin: 0;
+}
+
+.logo-picture1:hover,
+.logo-picture2:hover {
+  filter: brightness(0.75);
+  zoom: 1.5;
+}
