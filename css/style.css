@@ -1,4 +1,11 @@
+@import url("https://fonts.cdnfonts.com/css/source-sans-pro?styles=14489");
+
+html {
+  font-size: 62.5%;
+}
+
 .body {
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #000;
 }
 
@@ -25,13 +32,12 @@
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: fantasy, "Roboto";
   font-size: 24px;
   color: hsla(214, 34%, 26%, 1);
 }
 
 .heading {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -49,13 +55,15 @@
   max-width: 490px;
   text-align: left;
   padding: 0 20px;
+}
 
-  font-family: fantasy, "roboto";
+.instructions li {
+  font-size: 1.4rem;
 }
 
 .instructions a {
   color: blue;
-  font-size: 17px;
+  font-size: 1.6rem;
 }
 
 /* main page styles */
@@ -73,7 +81,6 @@
 }
 
 .title {
-  font-family: fantasy, "Roboto";
   font-size: 24px;
   color: hsla(214, 34%, 26%, 1);
   margin-left: 10px;
@@ -82,10 +89,6 @@
 ol {
   list-style: none;
   padding: 0;
-}
-
-.tournamentContainer {
-  /* width: 100vw; */
 }
 
 .tournamentList {
@@ -120,8 +123,10 @@ ol {
 .tournamentName {
   color: hsla(214, 34%, 26%, 1);
   font-weight: 600;
-  font-size: 19px;
   letter-spacing: 0.64px;
   margin-left: 15px;
-  font-family: fantasy, "Roboto";
+}
+
+.tournamentName a {
+  font-size: 1.6rem;
 }
