@@ -7,37 +7,228 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>FIFA World Cup 2026 Calendar</title>
+    <style>
+      .worldcup-page {
+        background: linear-gradient(135deg, #0b1e2f 0%, #1a3a4a 40%, #0d2b1f 100%);
+        min-height: 100vh;
+        color: #fff;
+      }
+
+      .worldcup-container {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 24px 16px 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 100px;
+        padding: 6px 18px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #b8d4e3;
+        margin-bottom: 20px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 8px 0;
+        background: linear-gradient(to right, #f9d56e, #f5a623, #f9d56e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-subtitle {
+        font-size: 1.05rem;
+        color: #8aabbc;
+        margin: 0;
+      }
+
+      .info-strip {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+        margin-bottom: 36px;
+        font-size: 0.9rem;
+        color: #8aabbc;
+      }
+
+      .info-strip span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .host-flags {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 28px;
+        font-size: 2rem;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        max-width: 380px;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 18px 22px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .card:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(249, 213, 110, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-icon {
+        flex-shrink: 0;
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+      }
+
+      .card-icon.apple {
+        background: linear-gradient(135deg, #1a1a1a, #333);
+      }
+
+      .card-icon.google {
+        background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+      }
+
+      .card-icon img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .card-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #6a8a9a;
+        margin-bottom: 3px;
+      }
+
+      .card-platform {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .card-arrow {
+        margin-left: auto;
+        font-size: 1.2rem;
+        color: #4a7a8a;
+        transition: transform 0.25s ease;
+      }
+
+      .card:hover .card-arrow {
+        transform: translateX(4px);
+        color: #f9d56e;
+      }
+
+      .footer-note {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #4a6a7a;
+        line-height: 1.5;
+      }
+
+      .trophy {
+        font-size: 4rem;
+        margin-bottom: 8px;
+        display: block;
+        filter: drop-shadow(0 4px 8px rgba(249, 213, 110, 0.3));
+      }
+    </style>
   </head>
 
-  <body class="body">
-    <div class="container">
-      <h1 class="header">Football (soccer) World Cup 2026 calendar</h1>
-      <div class="box">
-        <h2 class="heading">Mac / iPhone</h2>
-        <a
-          class="logo-picture1"
-          href="webcal://calendar.google.com/calendar/ical/ce1203e9973cf5d1d894159a5f6a783fe9daee46103d5328c02f6eea6f33a092%40group.calendar.google.com/public/basic.ics"
-        >
-          <img
-            src="../img/apple-calendar.svg"
-            width="100"
-            height="100"
-            alt="ical subscribe button"
-        /></a>
+  <body class="worldcup-page">
+    <div class="worldcup-container">
+      <div class="hero">
+        <span class="trophy">🏆</span>
+        <div class="hero-badge">June 11 – July 19, 2026</div>
+        <h1 class="hero-title">FIFA World Cup 2026</h1>
+        <p class="hero-subtitle">Never miss a match. Add the full schedule to your calendar.</p>
       </div>
 
-      <div class="box">
-        <h2 class="heading">Android</h2>
-        <a
-          class="logo-picture2"
-          href="https://calendar.google.com/calendar/r?cid=ce1203e9973cf5d1d894159a5f6a783fe9daee46103d5328c02f6eea6f33a092%40group.calendar.google.com"
-          ><img
-            src="../img/google-calendar.svg"
-            width="100"
-            height="100"
-            alt="android subscribe button"
-        /></a>
+      <div class="host-flags">🇨🇦 🇺🇸 🇲🇽</div>
+
+      <div class="info-strip">
+        <span>🌎 16 host cities</span>
+        <span>⚽ 48 teams</span>
+        <span>🏟 104 matches</span>
       </div>
+
+      <div class="cards">
+        <a
+          class="card"
+          href="webcal://calendar.google.com/calendar/ical/ce1203e9973cf5d1d894159a5f6a783fe9daee46103d5328c02f6eea6f33a092%40group.calendar.google.com/public/basic.ics"
+        >
+          <div class="card-icon apple">
+            <img src="../img/apple-calendar.svg" width="36" height="36" alt="" />
+          </div>
+          <div>
+            <div class="card-label">Subscribe on</div>
+            <div class="card-platform">iPhone / Mac</div>
+          </div>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a
+          class="card"
+          href="https://calendar.google.com/calendar/r?cid=ce1203e9973cf5d1d894159a5f6a783fe9daee46103d5328c02f6eea6f33a092%40group.calendar.google.com"
+        >
+          <div class="card-icon google">
+            <img src="../img/google-calendar.svg" width="36" height="36" alt="" />
+          </div>
+          <div>
+            <div class="card-label">Subscribe on</div>
+            <div class="card-platform">Android / Google</div>
+          </div>
+          <span class="card-arrow">→</span>
+        </a>
+      </div>
+
+      <p class="footer-note">
+        One tap to subscribe. Events stay updated automatically as the tournament progresses.
+      </p>
     </div>
   </body>
 </html>
